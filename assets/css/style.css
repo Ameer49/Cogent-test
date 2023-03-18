@@ -1,0 +1,510 @@
+:root {
+  /* Theme Colors */
+  --white: #fff;
+  --black: #000;
+  --secondry-black: #222222;
+  --primary-blue: #381DDB;
+  --secondry-blue: #2E5CFF;
+  --primary-gray: #F5F5F5;
+  --secondry-gray: #A3A3A3;
+  --tersery-gray:#f8f8f8;
+
+  /* font Size */
+  --xxx-small: 0.375rem;
+  /* 6px */
+  --xx-small: 0.5rem;
+  /* 8px */
+  --x-small: 0.625rem;
+  /* 10px */
+  --small: 0.75rem;
+  /* 12px */
+  --medium: 0.875rem;
+  /* 14px */
+  --base: 1rem;
+  /* 16px */
+  --large: 1.125rem;
+  /* 18px */
+  --x-large: 1.25rem;
+  /* 20px */
+  --xx-large: 1.375rem;
+  /* 22px*/
+  --xxx-large: 1.5rem;
+  /* 24px */
+
+  /* Font-weight */
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 70px 0;
+  margin: 0 auto;
+}
+.logo {
+  margin-right: 120px;
+  font-size: 1.5rem;
+}
+.logo a {
+  text-decoration: none;
+}
+nav {
+  flex: 3;
+}
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav a {
+  color: var(--black);
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: var(--medium);
+  font-weight: var(--font-weight-600);
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 8px;
+}
+.navbar-active {
+  color: var(--primary-blue);
+}
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+/* Main section area */
+.main-heading {
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto 130px;
+  color: var(--black);
+}
+.hero-content>p {
+  font-family: 'Raleway';
+  font-size: var(--large);
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  width: 55%;
+  color: var(--secondry-black);
+}
+.subscriation-form {
+  margin-top: 56px;
+  display: flex;
+}
+.subscriation-form>input {
+  width: 100%;
+  max-width: 350px;
+  padding: 16px 40px;
+  font-family: 'Raleway';
+  font-size: var(--base);
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  border-radius: 4px;
+  border: 1px solid var(--secondry-gray);
+  margin-right: 1.5rem;
+}
+/* second paragraph */
+.main-business {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.secondry-heading {
+  font-family: 'Montserrat';
+  font-size:2.125rem;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.main-business>p {
+  font-family: 'Raleway';
+  font-size: var(--base);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 80%;
+  color: var(--secondry-black);
+}
+.card-container{
+  margin: 60px 0 130px;
+}
+.card {
+  flex-basis: calc(33.33% - 20px);
+  /* Set the initial width of each card to 33.33% of the container minus the padding */
+  margin: 10px;
+  /* Add some margin between the cards */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border: 1px solid var(--primary-blue);
+}
+.card-title {
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 38px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 44px;
+}
+.card-description {
+  font-family: 'Raleway';
+  font-size: var(--base);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 17px;
+}
+.card-cta {
+  margin-top: 44px;
+  display: inline-block;
+}
+.active {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+.active>.card-cta {
+  color: var(--white);
+}
+.company-graph-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0 100px !important;
+}
+.graph-title {
+  font-family: 'Montserrat';
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 78px;
+  letter-spacing: 0em;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--white);
+}
+.graph-description {
+  font-family: 'Montserrat';
+  font-size: var(--base);
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--white);
+}
+.company-graph {
+  background-image: url('../images/company-states.png');
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.tech-description{
+font-family: 'Raleway';
+font-size: var(--base);
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+color: var(--secondry-black);
+}
+.feature-list{
+  font-family: 'Raleway';
+font-size: var(--base);
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0px;
+text-align: left;
+color: var(--secondry-black);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow the container to wrap to the next line when the screen size is reduced */
+}
+.section {
+  flex-basis: calc(50% - 20px);
+  /* Set the initial width of each section to 50% of the container minus the padding */
+  margin: 10px;
+}
+.description-section{
+  padding: 42px 0 42px 60px;
+}
+.tech-section{
+  padding: 130px 0 190px;
+}
+.technology-section > h2{
+  text-align: left;
+}
+.technology-section > ul > li::marker{
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+}
+.section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.section p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+footer{
+  background-color: var(--tersery-gray);
+}
+.footer-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 62px;
+  width: 100%;
+}
+.footer-container{
+  display: flex;
+  width: 100%;
+}
+.footer-description{
+  font-family: 'Raleway';
+font-size: var(--small);
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: left;
+width: 40%;
+color: var(--secondry-black);
+}
+.image-gallery{
+  display: flex;
+  justify-content: flex-end;
+}
+.image-gallery > img{
+  height: 581px;
+  width: 490px;
+}
+.social-media-icons{
+  padding: 0 20px;
+  cursor: pointer;
+}
+.link-btn {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: var(--medium);
+  font-weight: var(--font-weight-600);
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 8px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  /* padding: 20px; */
+}
+
+
+@media screen and (max-width: 992px) {
+  .nav-container {
+    padding: 35px 50px 0;
+    margin: 0 auto;
+  }
+  .logo {
+    margin-right: 70px;
+    font-size: 1.5rem;
+  }
+  nav li {
+    margin: 0 8px;
+  }
+}
+@media (max-width: 768px) {
+  /* Menu css */
+  .nav-container {
+    padding: 5px;
+  }
+  nav {
+    display: none;
+  }
+  .buttons {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    text-align: right;
+    font-size: 1.875rem;
+    padding: 10px;
+  }
+  nav.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-blue);
+  }
+  nav.active ul {
+    display: block;
+    text-align: center;
+  }
+  nav.active li {
+    display: block;
+    margin: 10px 0;
+  }
+  nav.active a {
+    color: var(--white);
+    font-size: 1.25rem;
+  }
+  /* Menu css ends here */
+  /* main section container */
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+  .main-heading {
+    font-family: 'Montserrat';
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .subscriation-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .subscriation-form>button {
+    margin: 1rem auto 62px;
+  }
+  .subscriation-form>input{
+    margin-right: 0px;
+  }
+  .secondry-heading {
+    font-family: 'Montserrat';
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .card {
+    flex-basis: calc(100% - 20px);
+    /* Set the width of each card to 100% of the container minus the padding on smaller screens */
+  }
+  .company-graph-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 48px 0 !important;
+  }
+  .graph-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .graph-description {
+    font-size: var(--small);
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .section {
+    flex-basis: calc(100% - 20px);
+    /* Set the width of each section to 100% of the container minus the padding on smaller screens */
+  }
+  .description-section{
+    order: 1;
+    padding: 32px 0  32px 0;
+  }
+  .image-gallery{
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .tech-section{
+    padding: 62px auto 100px;
+  }
+  .footer-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-container > .buttons,
+  .footer-container > nav{
+    display: block;
+  }
+  .footer-container > nav > ul{
+    display: flex;
+    justify-content: center;
+    margin: 12px 0;
+  }
+  .footer-description{
+    width: 100%;
+  }
+  .footer-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 24px auto; 
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 5px;
+  }
+  .hero-content>p {
+    font-family: 'Raleway';
+    font-size: var(--medium);
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    width: 80%;
+    color: var(--secondry-black);
+  }
+}

@@ -1,0 +1,125 @@
+
+  /* Margin utility Classes */
+  .m-32{
+    margin: 2rem;
+  }
+  .mx-32{
+    margin: 0 2rem;
+  }
+  .my-32{
+    margin: 2rem 0;
+  }
+  .mt-32{
+    margin-top: 2rem;
+  }
+  .mr-32{
+    margin-right: 2rem !important;
+  }
+  .mb-32{
+    margin-bottom: 2rem;
+  }
+  .ml-32{
+    margin-left: 2rem;
+  }
+
+  .mb-16{
+    margin-bottom: 1rem;
+  }
+  
+  .m-40{
+    margin: 2.5rem;
+  }
+  .mx-40{
+    margin: 0 2.5rem;
+  }
+  .my-40{
+    margin: 2.5rem 0;
+  }
+  .mt-40{
+    margin-top: 2.5rem;
+  }
+  .mr-40{
+    margin-right: 2.5rem !important;
+  }
+  .mb-40{
+    margin-bottom: 2.5rem;
+  }
+  .ml-40{
+    margin-left: 2.5rem;
+  }
+  /* Padding utility classes */
+  .p-40{
+    padding: 2.5rem;
+  }
+  .px-40{
+    padding: 0 2.5rem;
+  }
+  .py-40{
+    padding: 2.5rem 0;
+  }
+  .pt-40{
+    padding-top: 2.5rem;
+  }
+  .pr-40{
+    padding-right: 2.5rem !important;
+  }
+  .pb-40{
+    padding-bottom: 2.5rem;
+  }
+  .pl-40{
+    padding-left: 2.5rem;
+  }
+  
+  
+  /* Padding utility classes */
+  .px-6{
+    padding:0 6px;
+  }
+  .p-32{
+    padding: 2rem;
+  }
+  .px-32{
+    padding: 0 2rem;
+  }
+  .py-32{
+    padding: 2rem 0;
+  }
+  .pt-32{
+    padding-top: 2rem;
+  }
+  .pb-32{
+    padding-bottom: 2rem;
+  }
+  .ps-32{
+    padding-left: 2rem;
+  }
+  .pe-32{
+    padding-right: 2rem;
+  }
+
+
+.img-fluid{
+    width: 100%;
+    height: 100%;
+}
+
+
+  .btn-primary{
+    color: var(--white);
+    background-color: var(--primary-blue);
+    font-size: var(--base);
+    font-weight: 500;
+    line-height: 19px;
+    border-radius: 0.25rem;
+    padding: 16px 38px;
+    border: 1px solid var(--primary-blue);
+  }
+
+  .btn-outline-primary{
+    color: var(--primary-blue);
+    background-color: var(--white);
+    font-size: var(--base);
+    font-weight: 500;
+    line-height: 19px;
+    border: 1px solid var(--primary-blue);
+  }
